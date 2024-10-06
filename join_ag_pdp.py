@@ -19,6 +19,10 @@ def main():
         on=['STATE','Year','Commodity'],
         suffixes=['_AG','_PDP'],
     )
+    # No Concentration values are null so if they show up as
+    # null in the join then the ag row failed to match a pdp row
+    # so we can get rid of it
+    df_joined = df_joined[df_joined['Concentration'].notna()]
 
     df_joined.to_csv('Ag_PDP_join.csv',index=False)
 
