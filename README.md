@@ -16,3 +16,10 @@ After all scripts have been successfully run you'll have a bunch of artifacts in
 working directory.
 The jpeg files are the graphs for the years indicated in their titles.
 The data used to generate these graphs is in `County_Pesticide.csv`.
+
+### Problem 2
+Just run the jupyter notebooks and follow the instructions, providing the data at each
+step.
+
+### Problem 3
+TBD
