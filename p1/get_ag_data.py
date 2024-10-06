@@ -2,10 +2,6 @@ import pandas as pd
 import geopandas as gpd
 
 
-def convert_commodities(commod):
-    pass
-
-
 def main():
     shapefile_path = './shapefiles/US_counties_2012_geoid.shp'
     polygons = gpd.read_file(shapefile_path)
